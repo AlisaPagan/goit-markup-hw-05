@@ -390,6 +390,8 @@ img {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom .bottom-text {
@@ -397,6 +399,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom .logo {
@@ -417,11 +421,13 @@ img {
 
 .bottom .container {
   display: flex;
+  justify-content: center;
   align-items: baseline;
   gap: 120px;
+  max-width: 100%;
 }
 
-.social-list-heading {
+.footer-heading {
   color: #ffffff;
   margin-bottom: 16px;
   font-weight: 500;
@@ -442,4 +448,83 @@ img {
 
 .bottom-logo {
   margin-right: 120px;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  color: #ffffff;
+}
+
+.email::placeholder {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.sub-btn {
+  display: flex;
+  gap: 16px;
+  padding: 8px 24px 8px 24px;
+  max-height: 40px;
+}
+
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 408px;
+  height: 584px;
+  background-color: #fcfcfc;
+  margin-top: 80px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 4px;
+}
+
+.form-heading {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.form-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.form-field-lbl {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  flex-direction: row;
+  width: 16px;
+  height: 16px;
+}
+
+.form-field {
+  background-color: transparent;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
 }
