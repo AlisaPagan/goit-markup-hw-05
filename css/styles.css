@@ -455,6 +455,11 @@ img {
   flex-direction: column;
 }
 
+.sub-form-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
 .email {
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -477,6 +482,12 @@ img {
   max-height: 40px;
 }
 
+.sub-btn .social-icon {
+  fill: #ffffff;
+}
+
+/* Modal window  */
+
 .modal-overlay {
   display: flex;
   justify-content: center;
@@ -493,32 +504,84 @@ img {
   flex-direction: column;
   align-items: center;
   width: 408px;
-  height: 584px;
+  height: fit-content;
   background-color: #fcfcfc;
   margin-top: 80px;
   padding-top: 72px;
   padding-right: 24px;
   padding-left: 24px;
+  padding-bottom: 24px;
   border-radius: 4px;
+  position: relative;
+}
+
+.close-wrapper {
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-icon {
+  fill: #2e2f42;
 }
 
 .form-heading {
   font-weight: 500;
   margin-bottom: 16px;
 }
-.form-wrapper {
+.request-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-field-lbl {
   display: flex;
   flex-direction: column;
+  color: #8e8f99;
+  font-size: 12px;
+  gap: 4px;
 }
-.checkbox {
-  flex-direction: row;
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+}
+
+.consent-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #8e8f99;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.consent-check input[type="checkbox"] {
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+}
+
+.consent-check .privacy-link {
+  color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .form-field {
@@ -527,4 +590,21 @@ img {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  padding-left: 16px;
+}
+.msg {
+  height: 120px;
+  padding-top: 8px;
+  resize: none;
+}
+.input-wrapper {
+  position: relative;
+}
+
+.field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
 }
