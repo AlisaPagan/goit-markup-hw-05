@@ -23,6 +23,8 @@
     />
   </head>
   <body>
+    <!-- header -->
+
     <header class="top">
       <div class="container">
         <nav class="header-navigation">
@@ -63,12 +65,16 @@
     </header>
 
     <main>
+      <!-- hero -->
+
       <section class="hero section">
         <div class="container">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-cta">Order Service</button>
         </div>
       </section>
+
+      <!-- benefits -->
 
       <section class="benefits section">
         <div class="container">
@@ -129,6 +135,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- team -->
 
       <section class="team section">
         <div class="container">
@@ -370,6 +378,8 @@
         </div>
       </section>
 
+      <!-- portfolio -->
+
       <section class="portfolio section">
         <div class="container">
           <h2 class="section-heading">Our Portfolio</h2>
@@ -482,6 +492,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
 
     <footer class="bottom">
       <div class="container">
@@ -553,7 +564,7 @@
                 type="email"
                 name="user-email-sub"
                 placeholder="E-mail"
-                class="email"
+                class="email-field"
                 id="email-sub"
               />
 
@@ -568,6 +579,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
 
     <div class="modal-overlay">
       <div class="modal">
@@ -618,7 +631,17 @@
           </label>
 
           <label class="consent-check"
-            ><input type="checkbox" name="privacy" class="form-field" />
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy consent"
+              class="form-field"
+            />
+            <span class="custom-checkbox">
+              <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#checkbox-icon"></use>
+              </svg>
+            </span>
             <span
               >I accept the terms and conditions of the
               <a class="privacy-link" href="#">Privacy Policy</a></span
