@@ -557,24 +557,23 @@
         </div>
 
         <div class="subscribe-form">
+          <p class="footer-heading">Subscribe</p>
           <form class="sub-form">
-            <label for="email-sub" class="footer-heading">Subscribe </label>
-            <div class="sub-form-wrapper">
+            <label class="sub-field">
               <input
                 type="email"
                 name="user-email-sub"
                 placeholder="E-mail"
                 class="email-field"
-                id="email-sub"
               />
+            </label>
 
-              <button type="submit" class="sub-btn">
-                Subscribe
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#sub-icon"></use>
-                </svg>
-              </button>
-            </div>
+            <button type="submit" class="sub-btn">
+              Subscribe
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#sub-icon"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -584,69 +583,91 @@
 
     <div class="modal-overlay">
       <div class="modal">
-        <div class="close-wrapper">
+        <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
-        </div>
+        </button>
 
         <p class="form-heading">
           Leave your contacts and we will call you back
         </p>
         <form class="request-form">
-          <label class="form-field-lbl"
-            >Name
+          <div class="form-field-wrapper">
+            <label for="user-name" class="form-field-lbl">Name</label>
             <div class="input-wrapper">
-              <svg class="field-icon" width="16" height="16">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="form-field"
+              />
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#username-icon"></use>
               </svg>
-              <input type="text" name="user-name" class="form-field" />
             </div>
-          </label>
-          <label class="form-field-lbl"
-            >Phone
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="user-phone" class="form-field-lbl">Phone</label>
             <div class="input-wrapper">
-              <svg class="field-icon" width="16" height="16">
+              <input
+                type="tel"
+                name="user-phone"
+                class="form-field"
+                id="user-phone"
+              />
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone-icon"></use>
               </svg>
-              <input type="tel" name="user-phone" class="form-field" />
             </div>
-          </label>
-          <label class="form-field-lbl"
-            >Email
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="user-email" class="form-field-lbl">Email</label>
             <div class="input-wrapper">
-              <svg class="field-icon" width="16" height="16">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="form-field"
+              />
+              <svg class="field-icon" width="18" height="24">
                 <use href="./images/icons.svg#email-icon"></use>
               </svg>
-              <input type="email" name="user-email" class="form-field" />
             </div>
-          </label>
-          <label class="form-field-lbl"
-            >Comment
-            <textarea
-              name="message"
-              placeholder="Text input"
-              class="form-field msg"
-            ></textarea>
-          </label>
+          </div>
 
-          <label class="consent-check"
-            ><input
+          <div class="message-field">
+            <label for="user-comment" class="form-field-lbl">Comment</label>
+            <textarea
+              name="user-comment"
+              placeholder="Text input"
+              class="msg"
+              id="user-comment"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input
               type="checkbox"
-              name="privacy"
-              value="privacy consent"
-              class="form-field"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+              class="visually-hidden"
             />
-            <span class="custom-checkbox">
-              <svg class="checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#checkbox-icon"></use>
-              </svg>
-            </span>
-            <span
-              >I accept the terms and conditions of the
-              <a class="privacy-link" href="#">Privacy Policy</a></span
-            >
-          </label>
+            <label for="user-privacy" class="consent-check">
+              <span class="custom-checkbox" width="16px" height="16px">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox-icon"></use>
+                </svg> </span
+              >I accept the terms and conditions of the<a
+                class="privacy-link"
+                href="#"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
 
           <button type="submit" class="rqst-form-btn">Send</button>
         </form>
