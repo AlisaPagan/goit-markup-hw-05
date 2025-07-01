@@ -601,6 +601,7 @@ textarea::placeholder {
   background-color: transparent;
   border: 1px solid #2e2f42;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .consent-check .privacy-link {
